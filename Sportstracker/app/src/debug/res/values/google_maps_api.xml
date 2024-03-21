@@ -1,0 +1,12 @@
+<resources>
+    <!--
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=07:9A:F7:A8:95:B7:5C:88:CE:00:E0:41:5E:09:82:2B:84:DA:37:EA%3Bcom.example.sportstracker
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCjH48ao_PaFXcpx721XVtcgfq_Q2ka6Rs</string>
+</resources>
