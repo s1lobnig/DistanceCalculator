@@ -1,0 +1,2 @@
+rootProject.name='Distance-And-Area-Meter'
+include ':app'

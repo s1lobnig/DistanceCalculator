@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onBtnClearClicked"
+            android:text="@string/clear"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnStartTracking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onBtnStartTrackingClicked"
+            android:text="@string/start"/>
+
+        <Button
+            android:id="@+id/btnStartSelecting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onBtnStartSelectingClicked"
+            android:text="@string/select_positions" />
+
+        <Button
+            android:id="@+id/btnSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onBtnSelectClicked"
+            android:text="@string/select_position"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btnEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onBtnEndClicked"
+            android:text="@string/end"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnArea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onBtnAreaClicked"
+            android:text="@string/area"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onBtnDistanceClicked"
+            android:text="@string/distance"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#8994AA"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txtOutput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:text="distance: 344m" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnMapType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttons"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="5dp"
+        android:onClick="onBtnMapTypeClicked"
+        app:srcCompat="@drawable/baseline_layers_black_18dp" />
+
+</RelativeLayout>
