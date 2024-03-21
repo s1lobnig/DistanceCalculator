@@ -1,0 +1,3 @@
+Distance and Area Meter was done in 2020 for the course App Development (Study Informatics). It has two functions: It tracks the distance when walking or you can select GPS points on a map and the app tells you the distance. In Addition it can be used to calculate an area. When selecting points or after the finished route walking, one can let the app calculate the surrounded area.
+
+Sportstracker was done in 2021 for the coure Distributed Computer Inferstructures. This updates the function for traking the GPS while walking. It has a Location Service, which tracks the location (when selected to do so) even if the app is closed.
